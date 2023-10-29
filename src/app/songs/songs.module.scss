@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    padding: 2rem;
+}
+
+
+
+.video_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+
+    iframe {
+        aspect-ratio: 16 / 9;
+        height: auto
+    }
+
+    @media screen and (min-width: 768px) {
+        iframe {
+            width: calc(50% - 2rem);
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+        iframe {
+            width: calc(100%);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        iframe {
+            flex: 3;
+            // width: calc(32% - 2rem);
+        }
+    }
+
+}
+
+
+
+// @media screen and (max-width: 1024px) {
+//     .video_row {
+//         justify-content: center;
+//         // width: 50%;
+//     }
+
+
+// }
+
+// @media screen and (max-width: 768px) {
+//     .video_row {
+//         justify-content: center;
+//     }
+
+//     .video_row iframe {
+//         width: 30%;
+//     }
+// }
+
+// @media screen and (max-width: 480px) {
+//     .video_row iframe {
+//         width: 100%;
+//         /* Display 1 iframe in _row on phones */
+//     }
+// }
