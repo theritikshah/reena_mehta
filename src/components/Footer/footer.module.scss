@@ -1,0 +1,131 @@
+.container {
+    padding: 4rem;
+    background-image: url('/footer_bg.jpg');
+    background-size: 100% auto;
+    position: relative;
+
+    &>* {
+        position: relative;
+
+        z-index: 1;
+    }
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.10);
+        z-index: 0;
+        /* Set the overlay color and opacity */
+    }
+
+
+
+
+
+
+
+
+
+    .footer {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 2.5rem;
+        background-color: rgba($color: #fff, $alpha: 0.87);
+        backdrop-filter: blur(4px);
+
+        .footer_title {
+            margin: 0;
+            font-size: 2.6rem;
+            font-weight: 100;
+        }
+
+        .contact_details {
+            display: flex;
+            gap: 4.8rem;
+            align-items: flex-end;
+
+
+
+            .email {
+
+                display: flex;
+                flex-direction: column;
+
+                span:nth-of-type(1) {
+                    font-size: 1.4rem;
+                }
+
+                span:nth-of-type(2) {
+                    font-size: 2rem;
+                }
+            }
+
+            .social_icons {
+                display: flex;
+                gap: 4.8rem;
+                // width: 100%;
+                // padding: 1rem;
+                color: black;
+
+                &>* {
+
+                    width: 4rem
+                }
+
+            }
+        }
+
+        .legal_details {
+            display: flex;
+            gap: 4.8rem;
+            font-size: 1.4rem;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        .footer {
+            gap: 2rem;
+
+            .contact_details {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+
+                .email {
+                    align-items: center;
+                }
+
+                .social_icons {
+                    gap: 3.5rem;
+                }
+            }
+
+            .legal_details {
+                list-style: none;
+                padding: 0;
+                gap: 1.5rem;
+            }
+
+
+        }
+    }
+
+
+
+
+
+}
