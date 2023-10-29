@@ -1,0 +1,36 @@
+.body {
+    // width: 100%;
+    /* Set the width of the element */
+    // height: 100vh;
+    /* Set the height of the element to 100% of viewport height */
+    background-image: url('/reena_mehta_bw_bg.png');
+    /* Set the path to your image */
+    background-size: cover;
+    /* Cover the entire element with the image */
+    background-position: 100% 0;
+
+    background-size: 40% auto;
+    /* Center the image within the element */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+
+    @media screen and (max-width: 768px) {
+        background-position: 190% 25%;
+
+        background-size: 85% auto;
+    }
+
+}
+
+
+.container {
+    display: flex;
+
+    .reena_mehta_illustration {
+        padding-top: 3rem;
+        max-width: 100%;
+        max-height: 100%;
+        mix-blend-mode: multiply;
+        margin: auto;
+    }
+}
