@@ -1,5 +1,6 @@
 .body {
-
+    display: flex;
+    flex-direction: column;
     background-image: url('/reena_mehta_bw_bg.png');
     background-size: cover;
     background-position: 100% 0;
@@ -21,6 +22,10 @@
 
 .container {
     display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 4rem;
+    flex: 1;
 
     .reena_mehta_illustration {
         padding-top: 3rem;
@@ -28,5 +33,307 @@
         max-height: 100%;
         mix-blend-mode: multiply;
         margin: auto;
+    }
+
+
+
+    .featured_logos {
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        margin: 5rem auto;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+
+        img {
+            display: none;
+            width: 100%;
+            mix-blend-mode: multiply;
+        }
+
+
+
+
+
+
+        .logos_desktop {
+            display: block;
+            // width: 100%;
+        }
+
+        .logos_tablet {
+            display: none;
+        }
+
+        .logos_mobile {
+            display: none;
+        }
+
+
+        @media screen and (max-width:768px) {
+            margin: 4rem auto;
+
+            .logos_desktop {
+                display: none;
+                // width: 100%;
+            }
+
+            .logos_tablet {
+                display: block;
+            }
+
+            .logos_mobile {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width:320px) {
+            margin: 0rem auto;
+
+            .logos_desktop {
+                display: none;
+                // width: 100%;
+            }
+
+            .logos_tablet {
+                display: none;
+            }
+
+            .logos_mobile {
+                display: block;
+            }
+
+        }
+
+
+    }
+
+    .artistic_tale {
+        display: flex;
+        height: fit-content;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            // margin-top: 20%;
+
+
+
+            h2 {
+                font-size: 10.2rem;
+                font-weight: lighter;
+                margin: 0;
+                margin-left: 2rem;
+            }
+
+
+            p {
+                // width: 40%;
+                font-size: 2.4rem;
+                margin-left: 8rem;
+            }
+
+        }
+
+        .image {
+            position: relative;
+            width: 50%;
+            margin-top: auto;
+
+            p {
+                display: none;
+            }
+
+            // height: fit-content;
+
+            .reena_mehta_bw {
+
+                // height: fit-content;
+
+            }
+
+
+            .mic {
+                position: absolute;
+                bottom: 0;
+                left: -15rem;
+                height: auto;
+                width: 28rem;
+            }
+
+            // flex: 1;
+        }
+
+        @media screen and (max-width: 1024px) {
+
+            .content {
+                margin-top: 10%;
+
+                // gap: 5rem;
+
+                h2 {
+                    font-size: 7rem;
+                    font-weight: lighter;
+                    margin: 0;
+                    margin-left: 2rem;
+                }
+
+                p {
+                    // width: 40%;
+                    font-size: 2.4rem;
+                    margin: auto 8rem;
+                }
+            }
+
+
+            .image {
+                width: 40%;
+
+
+
+                .reena_mehta_bw {
+                    width: 100%;
+                    height: fit-content;
+
+                }
+
+                .mic {
+                    position: absolute;
+                    bottom: 0;
+                    left: -10rem;
+                    height: auto;
+                    width: 18rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            flex-direction: column;
+
+            .content {
+                // margin-top: 10%;
+
+                // gap: 5rem;
+
+                h2 {
+                    font-size: 6rem;
+                    font-weight: lighter;
+                    margin: 4rem auto;
+                }
+
+                p {
+                    display: none;
+                    // width: 40%;
+                    font-size: 2.4rem;
+                    margin: auto 8rem;
+                }
+            }
+
+
+            .image {
+                display: flex;
+                flex-direction: column;
+                // justify-content: flex-end;
+                width: 100%;
+
+                p {
+                    display: block;
+                    font-size: 2.4rem;
+                    margin-left: 8rem;
+                }
+
+                .reena_mehta_bw {
+                    margin-left: auto;
+                    width: 80%;
+                    height: fit-content;
+
+                }
+
+
+
+                .mic {
+                    display: none;
+                    position: absolute;
+                    top: 30rem;
+                    left: -4rem;
+                    height: auto;
+                    width: 15rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+
+            flex-direction: column;
+
+            .content {
+                // margin-top: 10%;
+
+                // gap: 5rem;
+
+                h2 {
+                    font-size: 4rem;
+                    font-weight: lighter;
+                    margin: 4rem auto;
+                }
+
+                p {
+                    display: none;
+                    // width: 40%;
+                    font-size: 2.4rem;
+                    // margin: auto 0rem;
+                }
+            }
+
+
+            .image {
+                display: flex;
+                flex-direction: column;
+                // justify-content: flex-end;
+                width: 100%;
+
+                p {
+                    display: block;
+                    font-size: 1.6rem;
+                    margin-left: 0rem;
+                }
+
+                .reena_mehta_bw {
+                    margin-left: auto;
+                    width: 100%;
+                    height: fit-content;
+
+                }
+
+
+
+                .mic {
+                    display: block;
+                    position: absolute;
+                    top: 17rem;
+                    left: -4rem;
+                    height: auto;
+                    width: 10rem;
+                }
+            }
+        }
+
+
+
+    }
+
+    .musical_journey_section {
+        position: relative;
+
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     }
 }
