@@ -36,7 +36,7 @@ export default async function Home() {
 
       <div className={styles.artistic_tale}>
         <div className={styles.content}>
-          <h2>Artist's Tale</h2>
+          <h2>Artist&apos;s Tale</h2>
 
           <p>
             I am Reena Mehta, an Indian vocalist embarking on a profound musical
@@ -44,7 +44,7 @@ export default async function Home() {
             identity within the rich tapestry of classical Indian ragas. Yet, my
             artistic vision knows no bounds, as I delve into a multifarious
             array of musical genres, harmoniously weaving together melodies that
-            narrate the intricate stories of life's myriad vicissitudes.
+            narrate the intricate stories of life&apos;s myriad vicissitudes.
           </p>
         </div>
         <div className={styles.image}>
@@ -59,7 +59,7 @@ export default async function Home() {
             identity within the rich tapestry of classical Indian ragas. Yet, my
             artistic vision knows no bounds, as I delve into a multifarious
             array of musical genres, harmoniously weaving together melodies that
-            narrate the intricate stories of life's myriad vicissitudes.
+            narrate the intricate stories of life&apos;s myriad vicissitudes.
           </p>
           <img className={styles.mic} src="/assests/mic.png" alt="mic" />
         </div>
